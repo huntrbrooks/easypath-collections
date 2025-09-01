@@ -26,7 +26,7 @@ CONTACT_EMAIL=info@easypathcollections.com.au
 1. Push your code to GitHub
 2. Connect your GitHub repo to Vercel
 3. Add environment variables in Vercel dashboard
-4. Deploy automatically on push
+4ang Deploy automatically on push
 
 ### 2. Netlify
 

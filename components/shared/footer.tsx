@@ -28,7 +28,7 @@ export function Footer() {
           <div className="space-y-4 mb-8">
             <div className="flex items-center justify-center gap-3">
               <Phone className="w-4 h-4 text-green-600" />
-              <a href="tel:0499682389" className="text-sm hover:underline">0499 682 389</a>
+              <a href="tel:0429129688" className="text-sm hover:underline">0429 129 688</a>
             </div>
             <div className="flex items-center justify-center gap-3">
               <Mail className="w-4 h-4 text-green-600" />

@@ -363,7 +363,7 @@ export function PortalPage() {
           <div className="flex items-center justify-center gap-6">
             <div className="flex items-center gap-2">
               <Phone className="w-4 h-4" />
-              <a href="tel:0499682389" className="text-sm hover:underline">0499 682 389</a>
+              <a href="tel:0429129688" className="text-sm hover:underline">0429 129 688</a>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4" />
