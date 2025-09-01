@@ -52,7 +52,15 @@ export function Footer() {
                 <li>
                   <button 
                     onClick={() => setCurrentPage('services')}
-                    className="hover:text-green-400 transition-colors text-left"
+                    className="hover:text-green-400 transition-colors text-left w-full text-left"
+                  >
+                    Services
+                  </button>
+                </li>
+                <li>
+                  <button 
+                    onClick={() => setCurrentPage('services')}
+                    className="hover:text-green-400 transition-colors text-left w-full text-left"
                   >
                     Commercial Debt Recovery
                   </button>
@@ -60,7 +68,7 @@ export function Footer() {
                 <li>
                   <button 
                     onClick={() => setCurrentPage('services')}
-                    className="hover:text-green-400 transition-colors text-left"
+                    className="hover:text-green-400 transition-colors text-left w-full text-left"
                   >
                     Credit Management
                   </button>
@@ -68,7 +76,7 @@ export function Footer() {
                 <li>
                   <button 
                     onClick={() => setCurrentPage('services')}
-                    className="hover:text-green-400 transition-colors text-left"
+                    className="hover:text-green-400 transition-colors text-left w-full text-left"
                   >
                     Legal Recovery
                   </button>
@@ -76,7 +84,7 @@ export function Footer() {
                 <li>
                   <button 
                     onClick={() => setCurrentPage('services')}
-                    className="hover:text-green-400 transition-colors text-left"
+                    className="hover:text-green-400 transition-colors text-left w-full text-left"
                   >
                     Skip Tracing
                   </button>

@@ -24,9 +24,9 @@ export function ServicesPage() {
 
       {/* Main Services */}
       <section className="px-4 py-12 bg-gray-50">
-        <div className="max-w-md mx-auto">
+        <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">Core Services</h2>
-          <div className="space-y-8">
+          <div className="grid gap-6 md:grid-cols-2">
             <div className="bg-white p-6 rounded-lg">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
@@ -84,34 +84,52 @@ export function ServicesPage() {
                 </div>
               </div>
             </div>
+
+            <div className="bg-white p-6 rounded-lg">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <FileText className="w-6 h-6 text-green-600" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-3">Skip Tracing</h3>
+                  <p className="text-gray-600 text-sm mb-4">Advanced location services to find missing debtors.</p>
+                  <ul className="text-gray-600 text-sm space-y-1">
+                    <li>• Address verification</li>
+                    <li>• Employment location</li>
+                    <li>• Asset discovery</li>
+                    <li>• Contact information updates</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Additional Services */}
       <section className="px-4 py-12 bg-white">
-        <div className="max-w-md mx-auto">
+        <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">Additional Services</h2>
-          <div className="grid grid-cols-2 gap-4">
-            <div className="text-center p-4">
-              <FileText className="w-8 h-8 text-green-600 mx-auto mb-3" />
-              <h3 className="font-semibold text-gray-900 mb-2">Skip Tracing</h3>
-              <p className="text-gray-600 text-xs">Locate missing debtors</p>
-            </div>
-            <div className="text-center p-4">
-              <Phone className="w-8 h-8 text-green-600 mx-auto mb-3" />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="text-center p-6 bg-gray-50 rounded-lg">
+              <Phone className="w-10 h-10 text-green-600 mx-auto mb-4" />
               <h3 className="font-semibold text-gray-900 mb-2">Phone Recovery</h3>
-              <p className="text-gray-600 text-xs">Professional phone collection</p>
+              <p className="text-gray-600 text-sm">Professional phone collection with proven negotiation techniques</p>
             </div>
-            <div className="text-center p-4">
-              <Gavel className="w-8 h-8 text-green-600 mx-auto mb-3" />
+            <div className="text-center p-6 bg-gray-50 rounded-lg">
+              <Gavel className="w-10 h-10 text-green-600 mx-auto mb-4" />
               <h3 className="font-semibold text-gray-900 mb-2">Litigation</h3>
-              <p className="text-gray-600 text-xs">Court action support</p>
+              <p className="text-gray-600 text-sm">Full legal support for court proceedings and enforcement</p>
             </div>
-            <div className="text-center p-4">
-              <Calculator className="w-8 h-8 text-green-600 mx-auto mb-3" />
+            <div className="text-center p-6 bg-gray-50 rounded-lg">
+              <Calculator className="w-10 h-10 text-green-600 mx-auto mb-4" />
               <h3 className="font-semibold text-gray-900 mb-2">Settlements</h3>
-              <p className="text-gray-600 text-xs">Negotiated payment plans</p>
+              <p className="text-gray-600 text-sm">Negotiated payment plans and structured settlements</p>
+            </div>
+            <div className="text-center p-6 bg-gray-50 rounded-lg">
+              <Shield className="w-10 h-10 text-green-600 mx-auto mb-4" />
+              <h3 className="font-semibold text-gray-900 mb-2">Asset Recovery</h3>
+              <p className="text-gray-600 text-sm">Identification and recovery of debtor assets</p>
             </div>
           </div>
         </div>
