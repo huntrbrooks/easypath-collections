@@ -1,6 +1,9 @@
 import { Phone, Mail, MapPin, Clock, Facebook, Twitter, Linkedin } from "lucide-react"
+import { useNavigation } from "@/components/navigation-context"
 
 export function Footer() {
+  const { setCurrentPage } = useNavigation()
+  
   return (
     <footer className="bg-gray-900 text-white">
       {/* Main Footer Content */}
@@ -25,11 +28,11 @@ export function Footer() {
           <div className="space-y-4 mb-8">
             <div className="flex items-center justify-center gap-3">
               <Phone className="w-4 h-4 text-green-600" />
-              <span className="text-sm">1300 EASYPATH (1300 327 972)</span>
+              <a href="tel:0499682389" className="text-sm hover:underline">0499 682 389</a>
             </div>
             <div className="flex items-center justify-center gap-3">
               <Mail className="w-4 h-4 text-green-600" />
-              <span className="text-sm">info@easypathcollections.com.au</span>
+              <a href="mailto:contact@easypathcollections.com.au" className="text-sm hover:underline">contact@easypathcollections.com.au</a>
             </div>
             <div className="flex items-center justify-center gap-3">
               <MapPin className="w-4 h-4 text-green-600" />
@@ -47,24 +50,36 @@ export function Footer() {
               <h3 className="font-semibold text-white mb-3">Services</h3>
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>
-                  <a href="#" className="hover:text-green-400 transition-colors">
+                  <button 
+                    onClick={() => setCurrentPage('services')}
+                    className="hover:text-green-400 transition-colors text-left"
+                  >
                     Commercial Debt Recovery
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-green-400 transition-colors">
+                  <button 
+                    onClick={() => setCurrentPage('services')}
+                    className="hover:text-green-400 transition-colors text-left"
+                  >
                     Credit Management
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-green-400 transition-colors">
+                  <button 
+                    onClick={() => setCurrentPage('services')}
+                    className="hover:text-green-400 transition-colors text-left"
+                  >
                     Legal Recovery
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-green-400 transition-colors">
+                  <button 
+                    onClick={() => setCurrentPage('services')}
+                    className="hover:text-green-400 transition-colors text-left"
+                  >
                     Skip Tracing
-                  </a>
+                  </button>
                 </li>
               </ul>
             </div>
@@ -72,24 +87,36 @@ export function Footer() {
               <h3 className="font-semibold text-white mb-3">Company</h3>
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>
-                  <a href="#" className="hover:text-green-400 transition-colors">
+                  <button 
+                    onClick={() => setCurrentPage('about')}
+                    className="hover:text-green-400 transition-colors text-left"
+                  >
                     About Us
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-green-400 transition-colors">
+                  <button 
+                    onClick={() => setCurrentPage('contact')}
+                    className="hover:text-green-400 transition-colors text-left"
+                  >
                     Contact
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-green-400 transition-colors">
+                  <button 
+                    onClick={() => setCurrentPage('portal')}
+                    className="hover:text-green-400 transition-colors text-left"
+                  >
                     Client Portal
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-green-400 transition-colors">
+                  <button 
+                    onClick={() => setCurrentPage('contact')}
+                    className="hover:text-green-400 transition-colors text-left"
+                  >
                     Privacy Policy
-                  </a>
+                  </button>
                 </li>
               </ul>
             </div>

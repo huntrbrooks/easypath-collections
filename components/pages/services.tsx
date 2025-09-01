@@ -1,8 +1,11 @@
 import { TrendingUp, Shield, Users, FileText, Phone, Gavel, Calculator } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { QuoteCalculator } from "@/components/sections/quote-calculator"
+import { useNavigation } from "@/components/navigation-context"
 
 export function ServicesPage() {
+  const { setCurrentPage } = useNavigation()
+  
   return (
     <>
       {/* Hero Section */}
@@ -189,7 +192,12 @@ export function ServicesPage() {
         <div className="max-w-md mx-auto text-center">
           <h2 className="text-2xl font-bold mb-6">Ready to Recover Your Debts?</h2>
           <p className="mb-8 text-green-100">Get started with a free consultation and case assessment today.</p>
-          <Button className="bg-white text-green-600 hover:bg-gray-100 px-8 py-3 font-medium">Get Free Quote</Button>
+          <Button 
+            onClick={() => setCurrentPage('contact')}
+            className="bg-white text-green-600 hover:bg-gray-100 px-8 py-3 font-medium"
+          >
+            Get Free Quote
+          </Button>
         </div>
       </section>
     </>

@@ -2,8 +2,11 @@ import { Button } from "@/components/ui/button"
 import { ChevronDown, Phone, Mail, Clock, Shield, Users, TrendingUp } from "lucide-react"
 import { TestimonialsSection } from "@/components/sections/testimonials"
 import { BlogPreview } from "@/components/sections/blog-preview"
+import { useNavigation } from "@/components/navigation-context"
 
 export function HomePage() {
+  const { setCurrentPage } = useNavigation()
+  
   return (
     <>
       {/* Main Content */}
@@ -25,6 +28,10 @@ export function HomePage() {
           </p>
 
           <Button
+            onClick={() => {
+              const element = document.getElementById('trust-indicators');
+              element?.scrollIntoView({ behavior: 'smooth' });
+            }}
             className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 text-sm font-medium uppercase tracking-wide"
             size="lg"
           >
@@ -101,7 +108,7 @@ export function HomePage() {
       </section>
 
       {/* Trust Indicators Section */}
-      <section className="bg-white px-4 py-12">
+      <section id="trust-indicators" className="bg-white px-4 py-12">
         <div className="max-w-md mx-auto text-center">
           <h3 className="text-2xl font-bold text-gray-900 mb-8">Why Choose EasyPath?</h3>
           <div className="grid grid-cols-2 gap-6">
@@ -142,11 +149,11 @@ export function HomePage() {
           <div className="space-y-4 mb-8">
             <div className="flex items-center justify-center gap-3">
               <Phone className="w-5 h-5" />
-              <span>1300 EASYPATH</span>
+              <a href="tel:0499682389" className="hover:underline">0499 682 389</a>
             </div>
             <div className="flex items-center justify-center gap-3">
               <Mail className="w-5 h-5" />
-              <span>info@easypathcollections.com.au</span>
+              <a href="mailto:contact@easypathcollections.com.au" className="hover:underline">contact@easypathcollections.com.au</a>
             </div>
             <div className="flex items-center justify-center gap-3">
               <Clock className="w-5 h-5" />
@@ -154,7 +161,12 @@ export function HomePage() {
             </div>
           </div>
 
-          <Button className="bg-white text-green-600 hover:bg-gray-100 px-8 py-3 font-medium">Get Free Quote</Button>
+          <Button 
+            onClick={() => setCurrentPage('contact')}
+            className="bg-white text-green-600 hover:bg-gray-100 px-8 py-3 font-medium"
+          >
+            Get Free Quote
+          </Button>
         </div>
       </section>
 

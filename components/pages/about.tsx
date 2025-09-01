@@ -1,7 +1,10 @@
 import { Shield, Users, Award, TrendingUp, CheckCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { useNavigation } from "@/components/navigation-context"
 
 export function AboutPage() {
+  const { setCurrentPage } = useNavigation()
+  
   return (
     <>
       {/* Hero Section */}
@@ -108,7 +111,12 @@ export function AboutPage() {
           <p className="mb-8 text-green-100">
             Let us help you recover what's rightfully yours with our proven, professional approach.
           </p>
-          <Button className="bg-white text-green-600 hover:bg-gray-100 px-8 py-3 font-medium">Get Started Today</Button>
+          <Button 
+            onClick={() => setCurrentPage('contact')}
+            className="bg-white text-green-600 hover:bg-gray-100 px-8 py-3 font-medium"
+          >
+            Get Started Today
+          </Button>
         </div>
       </section>
     </>

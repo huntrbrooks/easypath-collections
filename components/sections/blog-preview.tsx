@@ -1,8 +1,10 @@
 import { Clock, User, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { getFeaturedPosts } from "@/lib/blog-posts"
+import { useNavigation } from "@/components/navigation-context"
 
 export function BlogPreview() {
+  const { setCurrentPage } = useNavigation()
   const featuredPosts = getFeaturedPosts()
 
   if (featuredPosts.length === 0) return null
@@ -42,7 +44,12 @@ export function BlogPreview() {
                 <span>{new Date(post.publishedAt).toLocaleDateString('en-AU')}</span>
               </div>
               
-              <Button variant="outline" size="sm" className="text-green-600 border-green-600 hover:bg-green-50">
+              <Button 
+                onClick={() => setCurrentPage('contact')}
+                variant="outline" 
+                size="sm" 
+                className="text-green-600 border-green-600 hover:bg-green-50"
+              >
                 Read More
                 <ArrowRight className="ml-1 w-3 h-3" />
               </Button>
@@ -51,7 +58,11 @@ export function BlogPreview() {
         </div>
         
         <div className="text-center mt-8">
-          <Button variant="outline" className="text-green-600 border-green-600 hover:bg-green-50">
+          <Button 
+            onClick={() => setCurrentPage('contact')}
+            variant="outline" 
+            className="text-green-600 border-green-600 hover:bg-green-50"
+          >
             View All Articles
           </Button>
         </div>

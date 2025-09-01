@@ -92,8 +92,8 @@ export function ContactPage() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                <p className="text-green-600 font-medium">1300 EASYPATH</p>
-                <p className="text-gray-600 text-sm">(1300 327 972)</p>
+                <a href="tel:0499682389" className="text-green-600 font-medium hover:underline">0499 682 389</a>
+                <p className="text-gray-600 text-sm">Mobile</p>
               </div>
             </div>
 
@@ -103,7 +103,7 @@ export function ContactPage() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                <p className="text-green-600 font-medium">info@easypathcollections.com.au</p>
+                <a href="mailto:contact@easypathcollections.com.au" className="text-green-600 font-medium hover:underline">contact@easypathcollections.com.au</a>
                 <p className="text-gray-600 text-sm">We respond within 2 hours</p>
               </div>
             </div>
@@ -315,7 +315,7 @@ export function ContactPage() {
           </p>
           <div className="flex items-center justify-center gap-3 mb-6">
             <Phone className="w-6 h-6" />
-            <span className="text-xl font-bold">1300 EASYPATH</span>
+            <a href="tel:0499682389" className="text-xl font-bold hover:underline">0499 682 389</a>
           </div>
           <p className="text-green-100 text-sm">Available Monday to Friday, 9:00 AM - 5:00 PM AEST</p>
         </div>

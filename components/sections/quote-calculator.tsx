@@ -4,8 +4,10 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Calculator, DollarSign } from "lucide-react"
 import { trackQuoteCalculation } from "@/lib/analytics"
+import { useNavigation } from "@/components/navigation-context"
 
 export function QuoteCalculator() {
+  const { setCurrentPage } = useNavigation()
   const [debtAmount, setDebtAmount] = useState("")
   const [debtAge, setDebtAge] = useState("")
   const [showQuote, setShowQuote] = useState(false)
@@ -163,7 +165,10 @@ export function QuoteCalculator() {
           <p className="text-sm text-gray-600 mb-4">
             Ready to get started? Contact us for a detailed assessment.
           </p>
-          <Button className="bg-green-600 hover:bg-green-700">
+          <Button 
+            onClick={() => setCurrentPage('contact')}
+            className="bg-green-600 hover:bg-green-700"
+          >
             Get Professional Quote
           </Button>
         </div>

@@ -363,11 +363,11 @@ export function PortalPage() {
           <div className="flex items-center justify-center gap-6">
             <div className="flex items-center gap-2">
               <Phone className="w-4 h-4" />
-              <span className="text-sm">1300 EASYPATH</span>
+              <a href="tel:0499682389" className="text-sm hover:underline">0499 682 389</a>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4" />
-              <span className="text-sm">support@easypathcollections.com.au</span>
+              <a href="mailto:contact@easypathcollections.com.au" className="text-sm hover:underline">contact@easypathcollections.com.au</a>
             </div>
           </div>
         </div>

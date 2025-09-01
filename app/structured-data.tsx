@@ -14,7 +14,7 @@ export function StructuredData() {
     },
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "1300-327-972",
+      "telephone": "0499682389",
       "contactType": "customer service",
       "areaServed": "AU",
       "availableLanguage": "English"
