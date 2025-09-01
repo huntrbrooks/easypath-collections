@@ -162,17 +162,26 @@ export function Footer() {
             <p>© 2024 EasyPath Collections Pty Ltd. All rights reserved.</p>
             <p>ABN: 12 345 678 901 | Debt Collection License: DC123456</p>
             <div className="flex justify-center gap-4 mt-2">
-              <a href="#" className="hover:text-green-400 transition-colors">
+              <button 
+                onClick={() => setCurrentPage('terms-of-service')}
+                className="hover:text-green-400 transition-colors"
+              >
                 Terms of Service
-              </a>
+              </button>
               <span>|</span>
-              <a href="#" className="hover:text-green-400 transition-colors">
+              <button 
+                onClick={() => setCurrentPage('privacy-policy')}
+                className="hover:text-green-400 transition-colors"
+              >
                 Privacy Policy
-              </a>
+              </button>
               <span>|</span>
-              <a href="#" className="hover:text-green-400 transition-colors">
+              <button 
+                onClick={() => setCurrentPage('complaints')}
+                className="hover:text-green-400 transition-colors"
+              >
                 Complaints
-              </a>
+              </button>
             </div>
           </div>
         </div>

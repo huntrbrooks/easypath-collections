@@ -6,6 +6,9 @@ import { AboutPage } from "@/components/pages/about"
 import { ServicesPage } from "@/components/pages/services"
 import { ContactPage } from "@/components/pages/contact"
 import { PortalPage } from "@/components/pages/portal"
+import { PrivacyPolicy } from "@/components/pages/privacy-policy"
+import { TermsOfService } from "@/components/pages/terms-of-service"
+import { Complaints } from "@/components/pages/complaints"
 import { Footer } from "@/components/shared/footer"
 
 export default function App() {
@@ -23,6 +26,12 @@ export default function App() {
         return <ContactPage />
       case "portal":
         return <PortalPage />
+      case "privacy-policy":
+        return <PrivacyPolicy />
+      case "terms-of-service":
+        return <TermsOfService />
+      case "complaints":
+        return <Complaints />
       default:
         return <HomePage />
     }
