@@ -219,3 +219,4 @@ export function getPostById(id: string): BlogPost | undefined {
 export function getPostsByCategory(category: string): BlogPost[] {
   return blogPosts.filter(post => post.category === category)
 }
+

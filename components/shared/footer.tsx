@@ -160,7 +160,7 @@ export function Footer() {
         <div className="max-w-md mx-auto text-center">
           <div className="flex flex-col gap-2 text-xs text-gray-500">
             <p>© 2024 EasyPath Collections Pty Ltd. All rights reserved.</p>
-            <p>ABN: 12 345 678 901 | Debt Collection License: DC123456</p>
+            <p>ABN: 58 598 574 674</p>
             <div className="flex justify-center gap-4 mt-2">
               <button 
                 onClick={() => setCurrentPage('terms-of-service')}

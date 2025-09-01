@@ -109,3 +109,4 @@
 - **DNS Changes:** 24-48 hours to propagate globally
 - **Email Setup:** Immediate after DNS propagation
 - **Full Functionality:** 48-72 hours for all features
+
